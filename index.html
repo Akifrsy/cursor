@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <link rel="stylesheet" href="style..css">
+</head>
+<body>
+    <div class="mouse-cursor">
+
+    </div>
+    <script>
+        var Mouse_Cursor=document.querySelector('.mouse-cursor');
+        document.addEventListener("mousemove",(le)=>{
+            Mouse_Cursor.style.top=le.pageY+"px"
+            Mouse_Cursor.style.left=le.pageX+"px"
+        })
+    </script>
+</body>
+</html>
